@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18568e91d02642c9beae2c156e238e19" Name="Diagram1">
+        <EntityTypeShape EntityType="TrafficFinesModel.AreaOfViolation" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrafficFinesModel.Driver" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrafficFinesModel.DriverFine" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrafficFinesModel.Fine" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrafficFinesModel.Rank" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrafficFinesModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrafficFinesModel.TrafficInspector" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrafficFinesModel.TypeOfPunishment" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrafficFinesModel.TrafficPunisment" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="TrafficFinesModel.FK_Fine_AreaOfViolation" ManuallyRouted="false" />
+        <AssociationConnector Association="TrafficFinesModel.FK_DriverFine_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="TrafficFinesModel.FK_DriverFine_Fine" ManuallyRouted="false" />
+        <AssociationConnector Association="TrafficFinesModel.FK_DriverFine_TrafficInspector" ManuallyRouted="false" />
+        <AssociationConnector Association="TrafficFinesModel.FK_TrafficPunisment_Fine" ManuallyRouted="false" />
+        <AssociationConnector Association="TrafficFinesModel.FK_TrafficInspector_Rank" ManuallyRouted="false" />
+        <AssociationConnector Association="TrafficFinesModel.FK_TrafficPunisment_TypeOfPunishment1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
